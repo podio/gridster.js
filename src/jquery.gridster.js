@@ -348,7 +348,7 @@
                 'data-row': pos.row,
                 'data-sizex' : size_x,
                 'data-sizey' : size_y
-            }).addClass('gs-w').appendTo(this.$el).hide();
+            }).addClass('gs-w').appendTo(this.$el);
 
         this.$widgets = this.$widgets.add($w);
 
@@ -370,7 +370,7 @@
 
         this.drag_api.set_limits(this.cols * this.min_widget_width);
 
-        return $w.fadeIn();
+        return $w;
     };
 
 
